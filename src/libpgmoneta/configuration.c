@@ -5558,7 +5558,8 @@ as_compression(char* str)
       return COMPRESSION_SERVER_LZ4;
    }
 
-   if (!strcasecmp(str, "bz2") || !strcasecmp(str, "client-bz2"))
+   if (!strcasecmp(str, "bzip2") || !strcasecmp(str, "client-bzip2") ||
+       !strcasecmp(str, "bz2") || !strcasecmp(str, "client-bz2"))
    {
       return COMPRESSION_CLIENT_BZIP2;
    }
